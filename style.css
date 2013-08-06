@@ -1,0 +1,47 @@
+body {background-color:  #292727;}
+
+.container {
+	background: url(img/body_backer.jpg) no-repeat 0 0;
+}
+
+header {height:150px; border-bottom:1px solid #000;}
+
+
+
+.logo-icon {
+	background:url(img/logo-icon.png) no-repeat 0 10px;
+	padding:100px 0 0 150px;
+	height:143px;
+}
+
+.my-name {
+	color:#ccc;
+
+	margin-left:20px;
+}
+
+.site-name {
+	font-size:50%;
+	color:#ccc;
+}
+
+.row {
+	margin-bottom:15px;
+}
+
+.subs {
+	border:1px solid #000;
+	background-color:#ccc;
+	padding:5px;
+}
+
+.box {background-color:#ccc;
+		height:30px;
+		margin-top:10px; 
+}
+
+
+
+.padded-content {
+	padding:5px;
+}
