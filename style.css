@@ -29,9 +29,14 @@ header {height:150px; border-bottom:1px solid #000;}
 	margin-bottom:15px;
 }
 
+.img-holder {
+	width:100%;
+	max-width:370px;
+	height:auto;
+}
+
 .subs {
 	border:1px solid #000;
-	background-color:#ccc;
 	padding:5px;
 }
 
