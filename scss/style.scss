@@ -1,0 +1,154 @@
+$padding: 20px;
+
+$green: #27ae60;
+$blue: #4abeed;
+$grey:#262626;
+
+@import "compass/css3";
+
+@import "compass/utilities/color";
+
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+	background: url(../img/tweed.jpg) repeat 0 0 #292727;
+}
+
+h2 {
+  color:#ddd;
+  font-size:32px;
+  font-weight: normal;
+}
+
+.container {
+
+}
+
+header {
+	border-bottom:1px solid #000;
+	background-color:#000;
+  border-bottom: 6px solid #1c1c1c;
+	height:130px; 
+	margin-bottom:$padding;
+}
+
+#chevron {
+  position: relative;
+  text-align: center;
+  margin-top: $padding;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 90px;
+  width: 250px;
+   span {
+    position:relative;
+    z-index:100;
+		color:#000;
+    font-weight: bold;
+    font-size:30px;
+    text-shadow:0 2px 0 #138041;
+    line-height:50px
+
+   }
+}
+
+#chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: $green;
+  -webkit-transform: skew(0deg, 6deg);
+  -moz-transform: skew(0deg, 6deg);
+  -ms-transform: skew(0deg, 6deg);
+  -o-transform: skew(0deg, 6deg);
+  transform: skew(0deg, 6deg);
+}
+
+#chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: $green;
+  -webkit-transform: skew(0deg, -6deg);
+  -moz-transform: skew(0deg, -6deg);
+  -ms-transform: skew(0deg, -6deg);
+  -o-transform: skew(0deg, -6deg);
+  transform: skew(0deg, -6deg);
+}​
+
+
+.logo-icon {
+	background:url(../img/logo-icon.png) no-repeat 0 10px;
+	padding:100px 0 0 150px;
+	height:143px;
+}
+
+.my-name {
+	color:#ccc;
+
+	margin-left:20px;
+}
+
+.site-name {
+	font-size:50%;
+	color:#ccc;
+}
+
+.about {
+  margin:$padding 0;
+  text-align: center;
+}
+
+.intro {
+  margin-top: $padding *2;
+}
+
+.row {
+	margin-bottom:15px;
+}
+
+.display {
+  padding:$padding 0;
+}
+
+.module {
+  background-color: $grey;
+  padding:10px;
+  min-height: 150px;
+  box-shadow: 3px 3px 0 #000;
+  color:#ddd;
+  h2 {
+    text-align: center;
+    color:$blue;
+  }
+}
+
+.img-holder {
+	width:100%;
+	max-width:370px;
+	height:auto;
+}
+
+.subs {
+	border:0px solid #000;
+	padding:5px;
+}
+
+.box {background-color:#ccc;
+		height:30px;
+		margin-top:10px; 
+}
+
+
+
+.padded-content {
+	padding:5px;
+}
