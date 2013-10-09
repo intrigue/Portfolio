@@ -50,13 +50,15 @@ header {
   height: 100%;
   width: 51%;
   background: #27ae60;
+  border-left: 4px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.3);
   -webkit-transform: skew(0deg, 6deg);
   -moz-transform: skew(0deg, 6deg);
   -ms-transform: skew(0deg, 6deg);
   -o-transform: skew(0deg, 6deg);
   transform: skew(0deg, 6deg); }
 
-/* line 72, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 #chevron:after {
   content: '';
   position: absolute;
@@ -65,75 +67,77 @@ header {
   height: 100%;
   width: 50%;
   background: #27ae60;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.3);
   -webkit-transform: skew(0deg, -6deg);
   -moz-transform: skew(0deg, -6deg);
   -ms-transform: skew(0deg, -6deg);
   -o-transform: skew(0deg, -6deg);
   transform: skew(0deg, -6deg); }
 
-/* line 88, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 ​
 .logo-icon {
   background: url(../img/logo-icon.png) no-repeat 0 10px;
   padding: 100px 0 0 150px;
   height: 143px; }
 
-/* line 94, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 .my-name {
   color: #ccc;
   margin-left: 20px; }
 
-/* line 100, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 .site-name {
   font-size: 50%;
   color: #ccc; }
 
-/* line 105, ../scss/style.scss */
+/* line 109, ../scss/style.scss */
 .about {
   margin: 20px 0;
   text-align: center; }
 
-/* line 110, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .intro {
   margin-top: 40px; }
 
-/* line 114, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
 .row {
   margin-bottom: 15px; }
 
-/* line 118, ../scss/style.scss */
+/* line 122, ../scss/style.scss */
 .display {
   padding: 20px 0; }
 
-/* line 122, ../scss/style.scss */
+/* line 126, ../scss/style.scss */
 .module {
   background-color: #262626;
   padding: 10px;
   min-height: 150px;
   box-shadow: 3px 3px 0 #000;
   color: #ddd; }
-  /* line 128, ../scss/style.scss */
+  /* line 132, ../scss/style.scss */
   .module h2 {
     text-align: center;
     color: #4abeed; }
 
-/* line 134, ../scss/style.scss */
+/* line 138, ../scss/style.scss */
 .img-holder {
   width: 100%;
   max-width: 370px;
   height: auto; }
 
-/* line 140, ../scss/style.scss */
+/* line 144, ../scss/style.scss */
 .subs {
   border: 0px solid #000;
   padding: 5px; }
 
-/* line 145, ../scss/style.scss */
+/* line 149, ../scss/style.scss */
 .box {
   background-color: #ccc;
   height: 30px;
   margin-top: 10px; }
 
-/* line 152, ../scss/style.scss */
+/* line 156, ../scss/style.scss */
 .padded-content {
   padding: 5px; }

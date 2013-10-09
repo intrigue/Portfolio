@@ -62,6 +62,8 @@ header {
   height: 100%;
   width: 51%;
   background: $green;
+  border-left:4px solid rgba(255,255,255,0.3);
+   border-bottom:4px solid rgba(255,255,255,0.3);
   -webkit-transform: skew(0deg, 6deg);
   -moz-transform: skew(0deg, 6deg);
   -ms-transform: skew(0deg, 6deg);
@@ -77,6 +79,8 @@ header {
   height: 100%;
   width: 50%;
   background: $green;
+    border-right:4px solid rgba(255,255,255,0.3);
+     border-bottom:4px solid rgba(255,255,255,0.3);
   -webkit-transform: skew(0deg, -6deg);
   -moz-transform: skew(0deg, -6deg);
   -ms-transform: skew(0deg, -6deg);
