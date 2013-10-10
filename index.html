@@ -31,6 +31,14 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 
 
+    <script src="js/jquery.mixitup.min.js"></script>
+      <script>
+      $(function(){
+     
+    $('#Grid').mixitup();
+     
+});
+      </script>
   </head>
 
   <body>
@@ -93,7 +101,7 @@
  
  <ul id="Grid">
     <li class="mix web" data-name="web"><div class="subs"><img class="img-holder" alt="" src="img/folio/mychapterroom-site.jpg"></div></li>
-    <li class="mix print"> <div class="subs"><img class="img-holder" alt="" src="img/folio/jdthomas-site.jpg"></div></li>
+    <li class="mix print" data-name="print"> <div class="subs"><img class="img-holder" alt="" src="img/folio/jdthomas-site.jpg"></div></li>
     <li class="mix web" data-name="web"><div class="subs"> <img class="img-holder" alt="" src="img/folio/crossroads-site.jpg"></div></li>
         </ul>
                
@@ -159,13 +167,5 @@
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
 
-    <script src="js/jquery.mixitup.min.js"></script>
-      <script>
-      $(function(){
-     
-    $('#Grid').mixitup();
-     
-});
-      </script>
   </body>
 </html>
