@@ -34,11 +34,36 @@
     <script src="js/jquery.mixitup.min.js"></script>
       <script>
       $(function(){
-     
-    $('#Grid').mixitup();
-     
-});
+         $('#Grid').mixitup();
+      });
       </script>
+
+      <script src="js/jquery.easypiechart.min.js"></script>
+     
+     <script>
+          $(function() {
+        $('.chart').easyPieChart({
+          size:110,
+          trackColor:'green',
+          barColor:'red',
+          scaleColor:false,
+          lineWidth:9,
+          lineCap:'round',
+            onStep: function(from, to, percent) {
+              $(this.el).find('.percent').text(Math.round(percent));
+            }
+        })
+         });
+    </script>
+
+    <script>
+    function progress(percent, $element) {
+  var progressBarWidth = percent * $element.width() / 100;
+  $element.find('div').animate({ width: progressBarWidth }, 500).html(percent + "%&nbsp;");
+}
+progress(80, $('#progressBar'));
+
+</script>
   </head>
 
   <body>
@@ -84,12 +109,15 @@
                     <div class="span5 offset1 module">
                       <h2>Web</h2>
                       <div class="subs">This Box is for web </div>
-                       
+                       <span class="chart" data-percent="86">
+                         <span class="percent"></span>
+                        </span>
                      </div>
                 
                      <div class="span5 offset1 module">
                       <h2>Print</h2>
                       <div class="subs"> This box is for Print & idenity</div>
+                      <div id="progressBar"><div></div></div>
                     </div>
           </div> <!-- end row -->
 
