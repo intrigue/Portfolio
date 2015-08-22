@@ -15,6 +15,8 @@
         padding-top: 0px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -27,6 +29,41 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
+
+    <script src="js/jquery.mixitup.min.js"></script>
+      <script>
+      $(function(){
+         $('#Grid').mixitup();
+      });
+      </script>
+
+      <script src="js/jquery.easypiechart.min.js"></script>
+     
+     <script>
+          $(function() {
+        $('.chart').easyPieChart({
+          size:110,
+          trackColor:'green',
+          barColor:'red',
+          scaleColor:false,
+          lineWidth:9,
+          lineCap:'round',
+            onStep: function(from, to, percent) {
+              $(this.el).find('.percent').text(Math.round(percent));
+            }
+        })
+         });
+    </script>
+
+    <script>
+    function progress(percent, $element) {
+  var progressBarWidth = percent * $element.width() / 100;
+  $element.find('div').animate({ width: progressBarWidth }, 500).html(percent + "%&nbsp;");
+}
+progress(80, $('#progressBar'));
+
+</script>
   </head>
 
   <body>
@@ -72,34 +109,30 @@
                     <div class="span5 offset1 module">
                       <h2>Web</h2>
                       <div class="subs">This Box is for web </div>
+                       <span class="chart" data-percent="86">
+                         <span class="percent"></span>
+                        </span>
                      </div>
                 
                      <div class="span5 offset1 module">
                       <h2>Print</h2>
                       <div class="subs"> This box is for Print & idenity</div>
+                      <div id="progressBar"><div></div></div>
                     </div>
           </div> <!-- end row -->
 
           <div class="row">
-             
-              <div class="span4 ">
-               <div class="subs">
-                      <!-- http://placehold.it/260x180-->
-                      <img class="img-holder" alt="" src="img/folio/mychapterroom-site.jpg">
-                </div>
-              </div>
-                
-              <div class="span4 ">
-               <div class="subs">
-                          <img class="img-holder" alt="" src="img/folio/jdthomas-site.jpg">
-                 </div>
-              </div>
 
-              <div class="span4">  
-                <div class="subs">
-                   <img class="img-holder" alt="" src="img/folio/crossroads-site.jpg">
-                </div>
-              </div>
+            <ul>
+    <li class="filter" data-filter="web"><a href="#">Web</a> </li>
+    <li class="filter" data-filter="print"><a href="#">Print</a></li>
+ 
+ <ul id="Grid">
+    <li class="mix web" data-name="web"><div class="subs"><img class="img-holder" alt="" src="img/folio/mychapterroom-site.jpg"></div></li>
+    <li class="mix print" data-name="print"> <div class="subs"><img class="img-holder" alt="" src="img/folio/jdthomas-site.jpg"></div></li>
+    <li class="mix web" data-name="web"><div class="subs"> <img class="img-holder" alt="" src="img/folio/crossroads-site.jpg"></div></li>
+        </ul>
+               
         
          </div> <!-- end Row -->
           
@@ -120,6 +153,24 @@
               <div class="span1 box">11</div>
               <div class="span1 box">12</div>
 
+</ul>
+            
+
+
+              <div class="span4 ">
+               <div class="subs">
+                      <!-- http://placehold.it/260x180-->
+                      <img class="img-holder" alt="" src="img/folio/mychapterroom-site.jpg">
+                </div>
+              </div>
+                
+              <div class="span4 ">
+               <div class="subs">
+                          <img class="img-holder" alt="" src="img/folio/jdthomas-site.jpg">
+                 </div>
+              </div>
+
+              <div class="span4">  
   
         </div> <!-- end row -->
       </section>
